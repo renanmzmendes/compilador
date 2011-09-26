@@ -1,0 +1,4 @@
+86d1afcc392d3b64f0b887163413c387 09a23c49c4824ca37f585ac592b909d9 ffffffffffffffffffffffffffffffff 14328 /Users/tiago/Documents/Projetos Xcode/Compilador/build/Debug/Compilador
+0000000000003ff10000000000004557 5355ee594d178c6baf5e2ff69446dcf8 ffffffffffffffffffffffffffffffff 8628 /Users/tiago/Documents/Projetos Xcode/Compilador/build/Compilador.build/Debug/Compilador.build/Objects-normal/x86_64/Token.o
+000000000000009300000000000053fc d58441953890fc665fe6a8e0a055093a ffffffffffffffffffffffffffffffff 5848 /Users/tiago/Documents/Projetos Xcode/Compilador/build/Compilador.build/Debug/Compilador.build/Objects-normal/x86_64/main.o
+000000004bbd2c0b0000000000006134 bf62aa3f30960312957e713e7a5f1a06 ffffffffffffffffffffffffffffffff 11312 /Users/tiago/Documents/Projetos Xcode/Compilador/build/Compilador.build/Debug/Compilador.build/Objects-normal/x86_64/Arvore.o
