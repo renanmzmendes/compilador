@@ -18,7 +18,7 @@ int main()
 	novoToken = (Token *) malloc(sizeof(Token));
 
 	FILE *entrada;
-    entrada = fopen("in.txt", "r");
+    entrada = fopen("./in.txt", "r");
     //verificando se arquivo existe
     if(entrada==NULL)
     {

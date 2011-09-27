@@ -13,7 +13,7 @@ typedef enum tiposToken {
 	MINUS,
 	PLUS,
 	NEWLINE,
-	NUM, //Acho que seria bom diferenciar int de decimal
+	NUM,
 	STRING,
 	ID,
 	NOT,
