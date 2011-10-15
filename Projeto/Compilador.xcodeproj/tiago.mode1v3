@@ -329,12 +329,12 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>F1ADA0C41431295700D50C14</string>
+										<string>F1271E5E1449E42500C41553</string>
 										<key>history</key>
 										<array>
 											<string>F17C14BD1431184C00FB491D</string>
 											<string>F1ADA0C21431295700D50C14</string>
-											<string>F1ADA0C31431295700D50C14</string>
+											<string>F1ADA0C41431295700D50C14</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -392,9 +392,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>F1ADA0B11431229000D50C14</string>
+				<string>F1271E5F1449E42500C41553</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>F1ADA0B21431229000D50C14</string>
+				<string>F1271E601449E42500C41553</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -532,12 +532,12 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>F1ADA0BB1431229000D50C14</string>
-		<string>F1ADA0BC1431229000D50C14</string>
-		<string>1C78EAAD065D492600B07095</string>
+		<string>F1271E691449E42500C41553</string>
+		<string>F1271E6A1449E42500C41553</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>F15A5875142E4E3A00560AB9</string>
-		<string>/Users/tiago/Documents/USP/comp COOP/Modulo 5/Copiladores/Compilador/Projeto/Compilador.xcodeproj</string>
+		<string>1C78EAAD065D492600B07095</string>
+		<string>/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/Compilador.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>384 88 1035 790 0 0 1440 878 </string>
@@ -617,7 +617,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>F15A5875142E4E3A00560AB9</string>
-				<string>F1ADA0B31431229000D50C14</string>
+				<string>F1271E611449E42500C41553</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -661,8 +661,8 @@
 										<string>yes</string>
 										<key>sizes</key>
 										<array>
-											<string>{{0, 0}, {150, 302}}</string>
-											<string>{{150, 0}, {768, 302}}</string>
+											<string>{{0, 0}, {150, 313}}</string>
+											<string>{{150, 0}, {768, 313}}</string>
 										</array>
 									</dict>
 									<key>VerticalSplitView</key>
@@ -677,8 +677,8 @@
 										<string>yes</string>
 										<key>sizes</key>
 										<array>
-											<string>{{0, 0}, {918, 302}}</string>
-											<string>{{0, 302}, {918, 309}}</string>
+											<string>{{0, 0}, {918, 313}}</string>
+											<string>{{0, 313}, {918, 298}}</string>
 										</array>
 									</dict>
 								</dict>
@@ -711,7 +711,7 @@
 										<real>538</real>
 									</array>
 									<key>Frame</key>
-									<string>{{150, 0}, {768, 302}}</string>
+									<string>{{150, 0}, {768, 313}}</string>
 									<key>RubberWindowFrame</key>
 									<string>451 226 918 652 0 0 1440 878 </string>
 								</dict>
@@ -739,13 +739,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>F1ADA0B41431229000D50C14</string>
+				<string>F1271E621449E42500C41553</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>F1ADA0B51431229000D50C14</string>
-				<string>F1ADA0B61431229000D50C14</string>
-				<string>F1ADA0B71431229000D50C14</string>
-				<string>F1ADA0B81431229000D50C14</string>
-				<string>F1ADA0B91431229000D50C14</string>
+				<string>F1271E631449E42500C41553</string>
+				<string>F1271E641449E42500C41553</string>
+				<string>F1271E651449E42500C41553</string>
+				<string>F1271E661449E42500C41553</string>
+				<string>F1271E671449E42500C41553</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -909,7 +909,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>F1ADA0BA1431229000D50C14</string>
+				<string>F1271E681449E42500C41553</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>
@@ -919,7 +919,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>Identifier</key>
