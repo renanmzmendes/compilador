@@ -30,19 +30,25 @@ typedef enum tiposToken {
 	LEFTPAR,
 	MOD,
 	EoF,
-	ERRO
+	ERRO,
+	RESERVED_KEYWORD
 }tipoToken;
 
 typedef struct token {
-	
 	tipoToken tipo;
-	char *valor;
+	char valor[256];
 	int linha;
 	int coluna;
 } Token;
 
+
+
+
+
+void imprimirToken(Token *aux);
 void ImprimeTipo(tipoToken Tipo);
+void criarTabela_De_Caracteres_Especiais();
+void criarTabela_De_Palavras_Reservadas();
+Token *criarToken(char *Lexema, int terminal, int linha, int coluna);
+tipoToken definirTipo(char *Lexema,int terminal);
 
-Token *criarToken(char *Lexema, tipoToken tipo, int linha, int coluna);
-
-Token *getNextToken(FILE *, char *ch, int *linha,int *coluna);

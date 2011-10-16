@@ -1,5 +1,5 @@
-==
-
+!=
+"uma facilidade pra voce!"
 1234 12314a123124.546456 000000000
 sss
 #123a123 Linha de comentario que deve ser descartada

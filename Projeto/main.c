@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
-#include <ctype.h>
-#include "Token.h"
+#include "Lexico.h"
 
 #define MAX 30
 
@@ -10,10 +8,7 @@
 #define FALSE 1
 
 int main()
-{
-       
-    int linha=0,coluna=1;
-    char ch='\0';
+{	
 	Token *novoToken;
 	novoToken = (Token *) malloc(sizeof(Token));
 
@@ -26,11 +21,16 @@ int main()
      return FALSE;
     }
 	
+	InicializaLexico();
+	//ImprimirTabelaLexico(); //se quiser ver a tabela de estados
+	
 	printf("Linha  Coluna     Token     Tipo\n");
-// Lendo o Arquivo pegando todos os Tokens até terminar o arquivo o ch deve iniciar com NULL
-	while (novoToken->tipo != EoF){//	ch!='\377') {
-		novoToken = getNextToken(&*entrada, &ch, &linha, &coluna);
-	}
+    //Lendo o Arquivo pegando todos os Tokens até terminar o arquivo o ch deve iniciar com NULL
+	do {
+		novoToken = getNextToken(&*entrada);
+		imprimirToken(novoToken);
+	} while (novoToken->tipo != EoF);
+	
 	
 	return TRUE;
 }

@@ -1,10 +1,11 @@
 TCompilador
 v7
 r0
-t340386848.178030
+t340409911.550705
 cCheck dependencies
 cCompileC build/Compilador.build/Debug/Compilador.build/Objects-normal/x86_64/main.o "/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/main.c" normal x86_64 c com.apple.compilers.gcc.4_2
 cCompileC build/Compilador.build/Debug/Compilador.build/Objects-normal/x86_64/Token.o "/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/Token.c" normal x86_64 c com.apple.compilers.gcc.4_2
+cCompileC build/Compilador.build/Debug/Compilador.build/Objects-normal/x86_64/Lexico.o "/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/Lexico.c" normal x86_64 c com.apple.compilers.gcc.4_2
 cLd "/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/build/Debug/Compilador" normal x86_64
 
 N/Developer/SDKs/MacOSX10.6.sdk
@@ -87,47 +88,63 @@ i<string.h>
 i<ctype.h>
 i"Token.h"
 
-N/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/Token.c
-c000000004E99AC4B0000000000001BA0
-t1318693963
-s7072
+N/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/Lexico.c
+c000000004E9A06B7000000000000179A
+t1318717111
+s6042
 i<stdio.h>
 i<stdlib.h>
 i<ctype.h>
+i<string.h>
+i"Lexico.h"
+
+N/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/Lexico.h
+c000000004E9A06B70000000000000109
+t1318717111
+s265
+
+N/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/Token.c
+c000000004E9A061000000000000008F6
+t1318716944
+s2294
+i<stdio.h>
+i<stdlib.h>
 i<string.h>
 i"Token.h"
 
 N/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/Token.h
-c000000004E99AC4B000000000000024C
-t1318693963
-s588
+c000000004E9A062F00000000000002CC
+t1318716975
+s716
 
 N/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/build/Compilador.build/Debug/Compilador.build/Objects-normal/x86_64/Compilador.LinkFileList
-c000000004E99ACA00000000000000133
-t1318694048
-s307
+c000000004E99D87600000000000001CE
+t1318705270
+s462
+
+N/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/build/Compilador.build/Debug/Compilador.build/Objects-normal/x86_64/Lexico.o
+t1318717111
+s10676
 
 N/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/build/Compilador.build/Debug/Compilador.build/Objects-normal/x86_64/Token.o
-t1318693963
-s13000
+t1318716975
+s8264
 
 N/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/build/Compilador.build/Debug/Compilador.build/Objects-normal/x86_64/main.o
-t1318693963
-s5616
+t1318717111
+s4600
 
 N/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/build/Debug/Compilador
-t1318694048
-s14656
+t1318717111
+s16168
 
 N/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/main.c
-c000000004E99AC4B0000000000000305
-t1318693963
-s773
+c000000004E9A01C80000000000000302
+t1318715848
+s770
 i<stdio.h>
 i<stdlib.h>
-i<string.h>
-i<ctype.h>
-i"Token.h"
+i"Lexico.h"
 
 N/Users/tiago/Documents/USP/comp COOP/Modulo 5/Copiladores/Compilador/Projeto/Token.c
 c000000004E80F1D50000000000001BA0
@@ -173,7 +190,7 @@ i"Token.h"
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies340386848#340386848#0(0"0(0#1#0"3343187568374212096#0"0#
+lSLF07#2@18"Check dependencies340409911#340409911#0(0"0(0#1#0"8609508736#0"0#
 
 CCompileC build/Compilador.build/Debug/Compilador.build/Objects-normal/x86_64/Arvore.o "/Users/tiago/Documents/Projetos Xcode/Compilador/Arvore.c" normal x86_64 c com.apple.compilers.gcc.4_2
 s338578454.429462
@@ -187,6 +204,19 @@ xx86_64
 xc
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@65"Compile /Users/tiago/Documents/Projetos Xcode/Compilador/Arvore.c338578454#338578454#0(0"0(0#0#57"/Users/tiago/Documents/Projetos Xcode/Compilador/Arvore.c8615789056#1460"    cd "/Users/tiago/Documents/Projetos Xcode/Compilador"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/tiago/Documents/Projetos Xcode/Compilador/build/Compilador.build/Debug/Compilador.build/Compilador-generated-files.hmap" "-I/Users/tiago/Documents/Projetos Xcode/Compilador/build/Compilador.build/Debug/Compilador.build/Compilador-own-target-headers.hmap" "-I/Users/tiago/Documents/Projetos Xcode/Compilador/build/Compilador.build/Debug/Compilador.build/Compilador-all-target-headers.hmap" -iquote "/Users/tiago/Documents/Projetos Xcode/Compilador/build/Compilador.build/Debug/Compilador.build/Compilador-project-headers.hmap" "-F/Users/tiago/Documents/Projetos Xcode/Compilador/build/Debug" "-I/Users/tiago/Documents/Projetos Xcode/Compilador/build/Debug/include" "-I/Users/tiago/Documents/Projetos Xcode/Compilador/build/Compilador.build/Debug/Compilador.build/DerivedSources/x86_64" "-I/Users/tiago/Documents/Projetos Xcode/Compilador/build/Compilador.build/Debug/Compilador.build/DerivedSources" -c "/Users/tiago/Documents/Projetos Xcode/Compilador/Arvore.c" -o "/Users/tiago/Documents/Projetos Xcode/Compilador/build/Compilador.build/Debug/Compilador.build/Objects-normal/x86_64/Arvore.o"0#
+
+CCompileC build/Compilador.build/Debug/Compilador.build/Objects-normal/x86_64/Lexico.o "/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/Lexico.c" normal x86_64 c com.apple.compilers.gcc.4_2
+s340409911.445832
+e340409911.525171
+r1
+xCompileC
+xbuild/Compilador.build/Debug/Compilador.build/Objects-normal/x86_64/Lexico.o
+x/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/Lexico.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@94"Compile /Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/Lexico.c340409911#340409911#0(0"0(0#0#86"/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/Lexico.c8618730912#1779"    cd "/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/build/Compilador.build/Debug/Compilador.build/Compilador-generated-files.hmap" "-I/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/build/Compilador.build/Debug/Compilador.build/Compilador-own-target-headers.hmap" "-I/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/build/Compilador.build/Debug/Compilador.build/Compilador-all-target-headers.hmap" -iquote "/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/build/Compilador.build/Debug/Compilador.build/Compilador-project-headers.hmap" "-F/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/build/Debug" "-I/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/build/Debug/include" "-I/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/build/Compilador.build/Debug/Compilador.build/DerivedSources/x86_64" "-I/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/build/Compilador.build/Debug/Compilador.build/DerivedSources" -c "/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/Lexico.c" -o "/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/build/Compilador.build/Debug/Compilador.build/Objects-normal/x86_64/Lexico.o"0#
 
 CCompileC build/Compilador.build/Debug/Compilador.build/Objects-normal/x86_64/Token.o "/Users/tiago/Documents/Projetos Xcode/Compilador/Token.c" normal x86_64 c com.apple.compilers.gcc.4_2
 s338611264.142725
@@ -202,7 +232,17 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@64"Compile /Users/tiago/Documents/Projetos Xcode/Compilador/Token.c338611264#338611264#0(0"0(0#0#56"/Users/tiago/Documents/Projetos Xcode/Compilador/Token.c8629825216#1458"    cd "/Users/tiago/Documents/Projetos Xcode/Compilador"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/tiago/Documents/Projetos Xcode/Compilador/build/Compilador.build/Debug/Compilador.build/Compilador-generated-files.hmap" "-I/Users/tiago/Documents/Projetos Xcode/Compilador/build/Compilador.build/Debug/Compilador.build/Compilador-own-target-headers.hmap" "-I/Users/tiago/Documents/Projetos Xcode/Compilador/build/Compilador.build/Debug/Compilador.build/Compilador-all-target-headers.hmap" -iquote "/Users/tiago/Documents/Projetos Xcode/Compilador/build/Compilador.build/Debug/Compilador.build/Compilador-project-headers.hmap" "-F/Users/tiago/Documents/Projetos Xcode/Compilador/build/Debug" "-I/Users/tiago/Documents/Projetos Xcode/Compilador/build/Debug/include" "-I/Users/tiago/Documents/Projetos Xcode/Compilador/build/Compilador.build/Debug/Compilador.build/DerivedSources/x86_64" "-I/Users/tiago/Documents/Projetos Xcode/Compilador/build/Compilador.build/Debug/Compilador.build/DerivedSources" -c "/Users/tiago/Documents/Projetos Xcode/Compilador/Token.c" -o "/Users/tiago/Documents/Projetos Xcode/Compilador/build/Compilador.build/Debug/Compilador.build/Objects-normal/x86_64/Token.o"0#
 
 CCompileC build/Compilador.build/Debug/Compilador.build/Objects-normal/x86_64/Token.o "/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/Token.c" normal x86_64 c com.apple.compilers.gcc.4_2
-r0
+s340409775.343084
+e340409775.411864
+r1
+xCompileC
+xbuild/Compilador.build/Debug/Compilador.build/Objects-normal/x86_64/Token.o
+x/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/Token.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@93"Compile /Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/Token.c340409775#340409775#0(0"0(0#0#85"/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/Token.c8618951520#1777"    cd "/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/build/Compilador.build/Debug/Compilador.build/Compilador-generated-files.hmap" "-I/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/build/Compilador.build/Debug/Compilador.build/Compilador-own-target-headers.hmap" "-I/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/build/Compilador.build/Debug/Compilador.build/Compilador-all-target-headers.hmap" -iquote "/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/build/Compilador.build/Debug/Compilador.build/Compilador-project-headers.hmap" "-F/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/build/Debug" "-I/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/build/Debug/include" "-I/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/build/Compilador.build/Debug/Compilador.build/DerivedSources/x86_64" "-I/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/build/Compilador.build/Debug/Compilador.build/DerivedSources" -c "/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/Token.c" -o "/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/build/Compilador.build/Debug/Compilador.build/Objects-normal/x86_64/Token.o"0#
 
 CCompileC build/Compilador.build/Debug/Compilador.build/Objects-normal/x86_64/Token.o "/Users/tiago/Documents/USP/comp COOP/Modulo 5/Copiladores/Compilador/Projeto/Token.c" normal x86_64 c com.apple.compilers.gcc.4_2
 s338764409.346279
@@ -231,7 +271,17 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@63"Compile /Users/tiago/Documents/Projetos Xcode/Compilador/main.c338611726#338611726#0(0"0(0#0#55"/Users/tiago/Documents/Projetos Xcode/Compilador/main.c8617260128#1456"    cd "/Users/tiago/Documents/Projetos Xcode/Compilador"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/tiago/Documents/Projetos Xcode/Compilador/build/Compilador.build/Debug/Compilador.build/Compilador-generated-files.hmap" "-I/Users/tiago/Documents/Projetos Xcode/Compilador/build/Compilador.build/Debug/Compilador.build/Compilador-own-target-headers.hmap" "-I/Users/tiago/Documents/Projetos Xcode/Compilador/build/Compilador.build/Debug/Compilador.build/Compilador-all-target-headers.hmap" -iquote "/Users/tiago/Documents/Projetos Xcode/Compilador/build/Compilador.build/Debug/Compilador.build/Compilador-project-headers.hmap" "-F/Users/tiago/Documents/Projetos Xcode/Compilador/build/Debug" "-I/Users/tiago/Documents/Projetos Xcode/Compilador/build/Debug/include" "-I/Users/tiago/Documents/Projetos Xcode/Compilador/build/Compilador.build/Debug/Compilador.build/DerivedSources/x86_64" "-I/Users/tiago/Documents/Projetos Xcode/Compilador/build/Compilador.build/Debug/Compilador.build/DerivedSources" -c "/Users/tiago/Documents/Projetos Xcode/Compilador/main.c" -o "/Users/tiago/Documents/Projetos Xcode/Compilador/build/Compilador.build/Debug/Compilador.build/Objects-normal/x86_64/main.o"0#
 
 CCompileC build/Compilador.build/Debug/Compilador.build/Objects-normal/x86_64/main.o "/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/main.c" normal x86_64 c com.apple.compilers.gcc.4_2
-r0
+s340409911.444732
+e340409911.518164
+r1
+xCompileC
+xbuild/Compilador.build/Debug/Compilador.build/Objects-normal/x86_64/main.o
+x/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/main.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@92"Compile /Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/main.c340409911#340409911#0(0"0(0#0#84"/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/main.c8619158176#1775"    cd "/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/build/Compilador.build/Debug/Compilador.build/Compilador-generated-files.hmap" "-I/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/build/Compilador.build/Debug/Compilador.build/Compilador-own-target-headers.hmap" "-I/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/build/Compilador.build/Debug/Compilador.build/Compilador-all-target-headers.hmap" -iquote "/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/build/Compilador.build/Debug/Compilador.build/Compilador-project-headers.hmap" "-F/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/build/Debug" "-I/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/build/Debug/include" "-I/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/build/Compilador.build/Debug/Compilador.build/DerivedSources/x86_64" "-I/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/build/Compilador.build/Debug/Compilador.build/DerivedSources" -c "/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/main.c" -o "/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/build/Compilador.build/Debug/Compilador.build/Objects-normal/x86_64/main.o"0#
 
 CCompileC build/Compilador.build/Debug/Compilador.build/Objects-normal/x86_64/main.o "/Users/tiago/Documents/USP/comp COOP/Modulo 5/Copiladores/Compilador/Projeto/main.c" normal x86_64 c com.apple.compilers.gcc.4_2
 s338761658.072906
@@ -257,14 +307,14 @@ xx86_64
 lSLF07#2@76"Link /Users/tiago/Documents/Projetos Xcode/Compilador/build/Debug/Compilador338611726#338611726#0(0"0(0#0#0"8631246560#570"    cd "/Users/tiago/Documents/Projetos Xcode/Compilador"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk "-L/Users/tiago/Documents/Projetos Xcode/Compilador/build/Debug" "-F/Users/tiago/Documents/Projetos Xcode/Compilador/build/Debug" -filelist "/Users/tiago/Documents/Projetos Xcode/Compilador/build/Compilador.build/Debug/Compilador.build/Objects-normal/x86_64/Compilador.LinkFileList" -mmacosx-version-min=10.6 -o "/Users/tiago/Documents/Projetos Xcode/Compilador/build/Debug/Compilador"0#
 
 CLd "/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/build/Debug/Compilador" normal x86_64
-s340386848.161210
-e340386848.177971
+s340409911.525285
+e340409911.550654
 r1
 xLd
 x/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/build/Debug/Compilador
 xnormal
 xx86_64
-lSLF07#2@105"Link /Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/build/Debug/Compilador340386848#340386848#0(0"0(0#0#0"8605895840#715"    cd "/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk "-L/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/build/Debug" "-F/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/build/Debug" -filelist "/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/build/Compilador.build/Debug/Compilador.build/Objects-normal/x86_64/Compilador.LinkFileList" -mmacosx-version-min=10.6 -o "/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/build/Debug/Compilador"0#
+lSLF07#2@105"Link /Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/build/Debug/Compilador340409911#340409911#0(0"0(0#0#0"8619258176#715"    cd "/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk "-L/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/build/Debug" "-F/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/build/Debug" -filelist "/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/build/Compilador.build/Debug/Compilador.build/Objects-normal/x86_64/Compilador.LinkFileList" -mmacosx-version-min=10.6 -o "/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/build/Debug/Compilador"0#
 
 CLd "/Users/tiago/Documents/USP/comp COOP/Modulo 5/Copiladores/Compilador/Projeto/build/Debug/Compilador" normal x86_64
 s338764409.429755
