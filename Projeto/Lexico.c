@@ -18,12 +18,12 @@
 #define Fim_de_Arquivo -9
 
 #define NumEstados 8
+#define QTDE_Palavras_Reservadas 10
 
 static int linha;
 static int coluna;
 static char ch='\0';
 static int TabelaLexica[NumEstados][256];
-
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -31,15 +31,11 @@ static int TabelaLexica[NumEstados][256];
 #include <string.h>
 #include "Lexico.h"
 
-
-void ImprimirTabelaLexico(){
-	printf("\n\nESTADO   CARACTERE   PROXIMO ESTADO");
-	for (int i=0; i<=7; i++) {
-		for (int j=0; j<=255; j++) {
-			printf("%6d   %5c     : %3d\n",i,j,TabelaLexica[i][j]);
-		}
-		printf("\n\n");
-	}
+void InicializaLexico(){
+	linha = 0;
+	coluna = 0;
+	criarTabela_De_Caracteres_Especiais();
+	criarTabelaDeEstados();
 }
 
 void criarTabelaDeEstados(){
@@ -159,15 +155,6 @@ void criarTabelaDeEstados(){
 	
 }
 
-void InicializaLexico(){
-	linha = 0;
-	coluna = 0;
-	criarTabela_De_Caracteres_Especiais();
-	criarTabela_De_Palavras_Reservadas();
-	criarTabelaDeEstados();
-	}
-
-
 Token *getNextToken(FILE *inputFile){
 	if (ch == '\0') {// se é primeira chamada Lê o primeiro caractere do arquivo de entrada
 		ch = fgetc(inputFile);
@@ -233,4 +220,12 @@ Token *getNextToken(FILE *inputFile){
 	return criarToken(BufferLexema, estado_Atual, linha, coluna - strlen(BufferLexema));
 }
 
-
+void ImprimirTabelaLexico(){
+	printf("\n\nESTADO   CARACTERE   PROXIMO ESTADO");
+	for (int i=0; i<=7; i++) {
+		for (int j=0; j<=255; j++) {
+			printf("%6d   %5c     : %3d\n",i,j,TabelaLexica[i][j]);
+		}
+		printf("\n\n");
+	}
+}

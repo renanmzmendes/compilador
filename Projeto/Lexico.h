@@ -10,6 +10,8 @@
 #include "Token.h"
 
 void InicializaLexico();
-void ImprimirTabelaLexico();
 void criarTabelaDeEstados();
+
 Token *getNextToken(FILE *);
+void ImprimirTabelaLexico();
+

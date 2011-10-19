@@ -7,15 +7,22 @@
  *
  */
 
+
+// quase todos não são usados, mas vou deixar para o caso de agente resolver usar um dia,
+// os não usados tao abaixo de EoF.
 typedef enum tiposToken {
-	DIV,
-	MULT,
-	MINUS,
-	PLUS,
 	NEWLINE,
 	NUM,
 	STRING,
 	ID,
+	RESERVED_KEYWORD,
+	SPECIAL_CHARACTER,
+	ERRO,
+	EoF,
+	DIV,
+	MULT,
+	MINUS,
+	PLUS,
 	NOT,
 	NEQ,
 	GT,
@@ -28,10 +35,7 @@ typedef enum tiposToken {
 	AND,
 	RIGHTPAR,
 	LEFTPAR,
-	MOD,
-	EoF,
-	ERRO,
-	RESERVED_KEYWORD
+	MOD
 }tipoToken;
 
 typedef struct token {
@@ -43,12 +47,15 @@ typedef struct token {
 
 
 
+Token *criarToken(char *Lexema, int terminal, int linha, int coluna);
 
+//auxiliares na criação do token
+tipoToken definirTipo(char *Lexema,int terminal);
+int ehPalavraReservada(char *Lexema);
 
+//pra visualizar 
 void imprimirToken(Token *aux);
 void ImprimeTipo(tipoToken Tipo);
-void criarTabela_De_Caracteres_Especiais();
-void criarTabela_De_Palavras_Reservadas();
-Token *criarToken(char *Lexema, int terminal, int linha, int coluna);
-tipoToken definirTipo(char *Lexema,int terminal);
 
+//nem ta usando ainda
+void criarTabela_De_Caracteres_Especiais();

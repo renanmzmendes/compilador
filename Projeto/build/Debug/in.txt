@@ -9,4 +9,8 @@ sss
 >=
 ==
 <=
-     !=
+     != if else then false
+true 
+while (i=0)
+
+end
