@@ -36,7 +36,7 @@ typedef enum tiposToken {
 	RIGHTPAR,
 	LEFTPAR,
 	MOD
-}tipoToken;
+} tipoToken;
 
 typedef struct token {
 	tipoToken tipo;
