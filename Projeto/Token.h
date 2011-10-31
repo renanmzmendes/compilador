@@ -7,15 +7,36 @@
  *
  */
 
-
+#ifndef TOKEN_H
+#define TOKEN_H
 // quase todos não são usados, mas vou deixar para o caso de agente resolver usar um dia,
 // os não usados tao abaixo de EoF.
 typedef enum tiposToken {
 	NEWLINE,
+    COMMA,
+    DOT,
 	NUM,
 	STRING,
 	ID,
 	RESERVED_KEYWORD,
+    
+    WHILE,
+    IF,
+    ELSE,
+    ELSIF,
+    INT,
+    FLOAT,
+    CHAR,
+    BOOLEAN,
+    VOID,
+    END,
+    OUTPUT,
+    INPUT,
+    MAIN,
+    FALSEK,
+    TRUEK,
+    RETURN,
+    
 	SPECIAL_CHARACTER,
 	ERRO,
 	EoF,
@@ -24,13 +45,15 @@ typedef enum tiposToken {
 	MINUS,
 	PLUS,
 	NOT,
+    
 	NEQ,
 	GT,
 	GTE,
 	LT,
 	LTE,
+    EQ,
+    
 	ATTR,
-	EQ,
 	OR,
 	AND,
 	RIGHTPAR,
@@ -59,3 +82,5 @@ void ImprimeTipo(tipoToken Tipo);
 
 //nem ta usando ainda
 void criarTabela_De_Caracteres_Especiais();
+
+#endif

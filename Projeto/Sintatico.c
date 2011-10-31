@@ -7,3 +7,7 @@
 //
 
 #include "Sintatico.h"
+#include "TabelasSintatico.h"
+
+stackT pilha;
+

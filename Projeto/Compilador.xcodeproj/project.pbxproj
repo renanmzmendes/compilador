@@ -34,6 +34,8 @@
 		C15F72BB145DC7A900D3A4F7 /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
 		C15F72BD145DCB1200D3A4F7 /* Sintatico.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Sintatico.c; sourceTree = "<group>"; };
 		C15F72BE145DCB1200D3A4F7 /* Sintatico.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sintatico.h; sourceTree = "<group>"; };
+		C1B85511145DE3610036CA2E /* ConstantesSintatico.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstantesSintatico.h; sourceTree = "<group>"; };
+		C1B85513145E1CF60036CA2E /* TabelasSintatico.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabelasSintatico.h; sourceTree = "<group>"; };
 		C6A0FF2C0290799A04C91782 /* Compilador.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Compilador.1; sourceTree = "<group>"; };
 		F1271F14144A0FAE00C41553 /* Lexico.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lexico.h; sourceTree = "<group>"; };
 		F1271F15144A0FAE00C41553 /* Lexico.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Lexico.c; sourceTree = "<group>"; };
@@ -75,6 +77,8 @@
 				C15F72BB145DC7A900D3A4F7 /* stack.h */,
 				C15F72BD145DCB1200D3A4F7 /* Sintatico.c */,
 				C15F72BE145DCB1200D3A4F7 /* Sintatico.h */,
+				C1B85511145DE3610036CA2E /* ConstantesSintatico.h */,
+				C1B85513145E1CF60036CA2E /* TabelasSintatico.h */,
 			);
 			name = Source;
 			sourceTree = "<group>";

@@ -6,8 +6,15 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
+#ifndef SINTATICO_H
+#define SINTATICO_H
+
 #include "stack.h"
-#include "Lexico.h"
+#include "Token.h"
 
-stackT pilha;
+void empilha(int estado, int submaquina);
+void desempilha(); // sempre desempilha um estado e uma submáquina, não?
 
+int submaquinaValida(int estado, tipoToken token);
+
+#endif
