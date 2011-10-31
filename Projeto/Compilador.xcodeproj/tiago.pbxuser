@@ -61,16 +61,16 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 340747379;
-			PBXWorkspaceStateSaveDate = 340747379;
+			PBXPerProjectTemplateStateSaveDate = 341757461;
+			PBXWorkspaceStateSaveDate = 341757461;
 		};
 		perUserProjectItems = {
-			F19994A0144F70BA00C275B8 /* PBXTextBookmark */ = F19994A0144F70BA00C275B8 /* PBXTextBookmark */;
-			F19994A1144F70BA00C275B8 /* PBXTextBookmark */ = F19994A1144F70BA00C275B8 /* PBXTextBookmark */;
-			F19994A2144F70BA00C275B8 /* PBXTextBookmark */ = F19994A2144F70BA00C275B8 /* PBXTextBookmark */;
-			F19994A3144F70BA00C275B8 /* PBXTextBookmark */ = F19994A3144F70BA00C275B8 /* PBXTextBookmark */;
-			F19994A4144F70BA00C275B8 /* PBXTextBookmark */ = F19994A4144F70BA00C275B8 /* PBXTextBookmark */;
-			F19994A5144F70BA00C275B8 /* PBXTextBookmark */ = F19994A5144F70BA00C275B8 /* PBXTextBookmark */;
+			F19994A0144F70BA00C275B8 = F19994A0144F70BA00C275B8 /* PBXTextBookmark */;
+			F19994A1144F70BA00C275B8 = F19994A1144F70BA00C275B8 /* PBXTextBookmark */;
+			F19994A2144F70BA00C275B8 = F19994A2144F70BA00C275B8 /* PBXTextBookmark */;
+			F19994A3144F70BA00C275B8 = F19994A3144F70BA00C275B8 /* PBXTextBookmark */;
+			F19994A4144F70BA00C275B8 = F19994A4144F70BA00C275B8 /* PBXTextBookmark */;
+			F19994A5144F70BA00C275B8 = F19994A5144F70BA00C275B8 /* PBXTextBookmark */;
 		};
 		sourceControlManager = F15A5855142E4B4100560AB9 /* Source Control */;
 		userBuildSettings = {
@@ -92,7 +92,7 @@
 	F1271F15144A0FAE00C41553 /* Lexico.c */ = {
 		uiCtxt = {
 			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{709, 91}\";\n            s = 0;\n        },\n                {\n            r = \"{831, 3027}\";\n            s = 0;\n        },\n                {\n            c =             (\n                                {\n                    r = \"{4151, 38}\";\n                    s = 0;\n                },\n                                {\n                    r = \"{4236, 101}\";\n                    s = 0;\n                }\n            );\n            r = \"{3898, 1889}\";\n            s = 0;\n        },\n                {\n            r = \"{5818, 196}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 6016}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {791, 624}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1163, 651}}";
 			sepNavSelRange = "{784, 0}";
 			sepNavVisRange = "{0, 817}";
 			sepNavWindowFrame = "{{38, 64}, {1058, 788}}";
