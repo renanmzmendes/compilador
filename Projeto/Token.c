@@ -64,7 +64,7 @@ tipoToken definirTipo(char *Lexema,int terminal){
 			tipo = STRING;
 			break;
 		case -5:
-			tipo = NEWLINE;
+			tipo = PONTUACAO;
 			break;
 		case -6:
 			tipo = SPECIAL_CHARACTER;

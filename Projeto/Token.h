@@ -12,30 +12,14 @@
 // quase todos não são usados, mas vou deixar para o caso de agente resolver usar um dia,
 // os não usados tao abaixo de EoF.
 typedef enum tiposToken {
-	NEWLINE,
+	PONTUACAO,
 	NUM,
 	STRING,
 	ID,
 	RESERVED_KEYWORD,
-        
-    WHILE,
-    IF,
-    ELSE,
-    ELSIF,
-    INT,
-    FLOAT,
-    CHAR,
-    BOOLEAN,
-    VOID,
-    END,
-    OUTPUT,
-    INPUT,
-    MAIN,
-    FALSEK,
-    TRUEK,
-    RETURN,
-    
+	
 	SPECIAL_CHARACTER,
+
 	ERRO,
 	EoF,
 	DIV,

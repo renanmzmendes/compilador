@@ -58,7 +58,7 @@ void criarTabelaDeEstados(){
 		else if (valorASCII== '"'){
 			TabelaLexica[estado][valorASCII] = 6;
 		}
-		else if (valorASCII== '\n'){
+		else if (valorASCII== '\n' || valorASCII== '.' || valorASCII== ','){
 			TabelaLexica[estado][valorASCII] = Terminal_PONTUACAO;
 		}
 		else if (valorASCII== '=' || valorASCII== '>' || valorASCII== '<' || valorASCII== '!'){
@@ -66,7 +66,7 @@ void criarTabelaDeEstados(){
 		}
 		else if (valorASCII== '+' || valorASCII== '-' || valorASCII== '*' || valorASCII== '/' || 
 				 valorASCII== '%' || valorASCII== '(' || valorASCII== ')' || valorASCII== '&' ||
-				 valorASCII== '|' || valorASCII== '[' || valorASCII== ']' || valorASCII== '.' || valorASCII== ','){
+				 valorASCII== '|' || valorASCII== '[' || valorASCII== ']' ){
 			TabelaLexica[estado][valorASCII] = Terminal_CARACTER_ESPECIAL;
 		}
 		else if (valorASCII== '\377'){

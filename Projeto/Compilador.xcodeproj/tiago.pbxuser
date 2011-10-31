@@ -82,19 +82,26 @@
 			F15A584F142E4B2300560AB9 /* Compilador */,
 		);
 	};
+	C1B85513145E1CF60036CA2E /* TabelasSintatico.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1163, 3835}}";
+			sepNavSelRange = "{293, 0}";
+			sepNavVisRange = "{204, 1587}";
+		};
+	};
 	F1271F14144A0FAE00C41553 /* Lexico.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {791, 624}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1163, 651}}";
 			sepNavSelRange = "{208, 0}";
-			sepNavVisRange = "{0, 268}";
+			sepNavVisRange = "{0, 330}";
 		};
 	};
 	F1271F15144A0FAE00C41553 /* Lexico.c */ = {
 		uiCtxt = {
-			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{709, 91}\";\n            s = 0;\n        },\n                {\n            r = \"{831, 3027}\";\n            s = 0;\n        },\n                {\n            c =             (\n                                {\n                    r = \"{4151, 38}\";\n                    s = 0;\n                },\n                                {\n                    r = \"{4236, 101}\";\n                    s = 0;\n                }\n            );\n            r = \"{3898, 1889}\";\n            s = 0;\n        },\n                {\n            r = \"{5818, 196}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 6016}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {1163, 651}}";
-			sepNavSelRange = "{784, 0}";
-			sepNavVisRange = "{0, 817}";
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{709, 91}\";\n            s = 0;\n        },\n                {\n            c =             (\n                                {\n                    r = \"{4191, 38}\";\n                    s = 0;\n                },\n                                {\n                    r = \"{4276, 101}\";\n                    s = 0;\n                }\n            );\n            r = \"{3938, 1889}\";\n            s = 0;\n        },\n                {\n            r = \"{5858, 196}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 6056}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {1163, 1885}}";
+			sepNavSelRange = "{1362, 18}";
+			sepNavVisRange = "{0, 1214}";
 			sepNavWindowFrame = "{{38, 64}, {1058, 788}}";
 		};
 	};
@@ -154,18 +161,18 @@
 	};
 	F15A58A9142E4F7A00560AB9 /* Token.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {791, 871}}";
-			sepNavSelRange = "{132, 0}";
-			sepNavVisRange = "{0, 586}";
-			sepNavWindowFrame = "{{61, 43}, {1058, 788}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1163, 1014}}";
+			sepNavSelRange = "{327, 0}";
+			sepNavVisRange = "{0, 638}";
+			sepNavWindowFrame = "{{320, 90}, {1058, 788}}";
 		};
 	};
 	F15A58AA142E4F7A00560AB9 /* Token.c */ = {
 		uiCtxt = {
-			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{503, 190}\";\n            s = 0;\n        },\n                {\n            r = \"{1766, 206}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 3316}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {701, 2418}}";
-			sepNavSelRange = "{792, 0}";
-			sepNavVisRange = "{320, 472}";
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{503, 190}\";\n            s = 0;\n        },\n                {\n            r = \"{1768, 206}\";\n            s = 0;\n        },\n                {\n            r = \"{2041, 1120}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 3318}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {1163, 1326}}";
+			sepNavSelRange = "{1006, 0}";
+			sepNavVisRange = "{412, 1107}";
 			sepNavWindowFrame = "{{38, 64}, {1058, 788}}";
 		};
 	};
@@ -242,7 +249,7 @@
 		fRef = F1271F15144A0FAE00C41553 /* Lexico.c */;
 		name = "Lexico.c: 221";
 		rLen = 0;
-		rLoc = 5788;
+		rLoc = 5828;
 		rType = 0;
 		vrLen = 6016;
 		vrLoc = 0;
