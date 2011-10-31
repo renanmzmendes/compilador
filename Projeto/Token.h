@@ -13,14 +13,14 @@
 // os não usados tao abaixo de EoF.
 typedef enum tiposToken {
 	NEWLINE,
-    COMMA,
-    DOT,
+//    COMMA,
+//    DOT,
 	NUM,
 	STRING,
 	ID,
 	RESERVED_KEYWORD,
-    
-    WHILE,
+        
+/*  WHILE,
     IF,
     ELSE,
     ELSIF,
@@ -35,7 +35,7 @@ typedef enum tiposToken {
     MAIN,
     FALSEK,
     TRUEK,
-    RETURN,
+    RETURN,*/
     
 	SPECIAL_CHARACTER,
 	ERRO,
@@ -44,7 +44,7 @@ typedef enum tiposToken {
 	MULT,
 	MINUS,
 	PLUS,
-	NOT,
+    NOT,
     
 	NEQ,
 	GT,
@@ -58,7 +58,8 @@ typedef enum tiposToken {
 	AND,
 	RIGHTPAR,
 	LEFTPAR,
-	MOD
+	MOD,
+    NDEF
 } tipoToken;
 
 typedef struct token {

@@ -9,5 +9,6 @@
 #include "Sintatico.h"
 #include "TabelasSintatico.h"
 
-stackT pilha;
+void empilha(int estado, int submaquina) {
 
+}
