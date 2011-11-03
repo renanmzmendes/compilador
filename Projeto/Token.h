@@ -17,30 +17,11 @@ typedef enum tiposToken {
 	STRING,
 	ID,
 	RESERVED_KEYWORD,
-	
-	SPECIAL_CHARACTER,
 
+	SPECIAL_CHARACTER,
 	ERRO,
 	EoF,
-	DIV,
-	MULT,
-	MINUS,
-	PLUS,
-    NOT,
-    
-	NEQ,
-	GT,
-	GTE,
-	LT,
-	LTE,
-    EQ,
-    
-	ATTR,
-	OR,
-	AND,
-	RIGHTPAR,
-	LEFTPAR,
-	MOD,
+
     NDEF
 } tipoToken;
 
@@ -60,8 +41,8 @@ tipoToken definirTipo(char *Lexema,int terminal);
 int ehPalavraReservada(char *Lexema);
 
 //pra visualizar 
-void imprimirToken(Token *aux);
-void ImprimeTipo(tipoToken Tipo);
+//void imprimirToken(Token *aux);
+//void ImprimeTipo(tipoToken Tipo);
 
 //nem ta usando ainda
 void criarTabela_De_Caracteres_Especiais();

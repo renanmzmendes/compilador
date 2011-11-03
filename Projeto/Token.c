@@ -13,21 +13,27 @@
 #include <string.h>
 #include "Token.h"
 
-#define TRUE 0
-#define FALSE 1
+#define TRUE 1
+#define FALSE 0
 
 //sem indices, só as palavras
 const char* Tabela_Palavras_Reservadas[] = {
 	"if",
 	"else",
+    "elsif",
 	"end",
 	"while",
 	"int",
 	"float",
-	"bool",
+	"boolean",
 	"char",
+    "void",
 	"true",
-	"false"
+	"false",
+    "return",
+    "input",
+    "output",
+    "main"
 };
 
 //cria o tal do token
@@ -87,104 +93,23 @@ tipoToken definirTipo(char *Lexema,int terminal){
 // para o caso de IDENTIFICADOR verifica se é uma palavra reservada
 int ehPalavraReservada(char *Lexema){
 	int i;
-	for (i = 0; i < sizeof(Tabela_Palavras_Reservadas)/sizeof(Tabela_Palavras_Reservadas[0]); i++) {
-		if (strcmp(Lexema, Tabela_Palavras_Reservadas[i]))
-			return FALSE;
+	for (i = 0; i < sizeof(Tabela_Palavras_Reservadas)/sizeof(*Tabela_Palavras_Reservadas); i++) {
+		if (!strcmp(Lexema, Tabela_Palavras_Reservadas[i]))
+			return TRUE;
 	}
-	return TRUE;	
+	return FALSE;	
 }
 
 // imprime
-void imprimirToken(Token *aux){
-	if (aux->tipo == NEWLINE)
+/*void imprimirToken(Token *aux){
+	if (aux->tipo == PONTUACAO)
 		printf("%5d %5d            \\n : ", aux->linha, aux->coluna);
 	else 
 		printf("%5d %5d  %12s : ", aux->linha, aux->coluna, aux->valor);
 	ImprimeTipo(aux->tipo);
 	printf("\n");
-}
+}*/
 
-// pra ajudar o imprimir token
-void ImprimeTipo(tipoToken Tipo){
-	switch (Tipo) {
-		case DIV:
-			printf("DIV");
-			break;
-		case MULT:
-			printf("MULT");
-			break;
-		case MINUS:
-			printf("MINUS");
-			break;
-		case PLUS:
-			printf("PLUS");
-			break;
-		case NEWLINE:
-			printf("NEWLINE");
-			break;
-		case NUM:
-			printf("NUM");
-			break;
-		case STRING:
-			printf("STRING");
-			break;
-		case ID:
-			printf("ID");
-			break;
-		case NOT:
-			printf("NOT");
-			break;
-		case NEQ:
-			printf("NEQ");
-			break;
-		case GT:
-			printf("GT");
-			break;
-		case GTE:
-			printf("GTE");
-			break;
-		case LT:
-			printf("LT");
-			break;
-		case LTE:
-			printf("LTE");
-			break;
-		case ATTR:
-			printf("ATTR");
-			break;
-		case EQ:
-			printf("EQ");
-			break;
-		case OR:
-			printf("OR");
-			break;
-		case AND:
-			printf("AND");
-			break;
-		case RIGHTPAR:
-			printf("RIGHTPAR");
-			break;
-		case LEFTPAR:
-			printf("LEFTPAR");
-			break;
-		case MOD:
-			printf("MOD");
-		case EoF:
-			printf("EoF");
-			break;
-		case RESERVED_KEYWORD:
-			printf("RESERVED_KEYWORD");
-			break;
-		case SPECIAL_CHARACTER:
-			printf("SPECIAL_CHARACTER");
-			break;
-		case ERRO:
-			printf("ERRO");
-			break;
-		default:
-			break;
-	}
-}
 
 //essa tabela serveria para o caso de ter que diferenciar os caracteres especiais.
 // NÀO ESTA IMPLEMENTADA

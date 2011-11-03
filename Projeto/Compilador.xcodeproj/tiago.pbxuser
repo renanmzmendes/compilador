@@ -44,7 +44,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					613,
+					594,
 					20,
 					48,
 					43,
@@ -61,16 +61,18 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 341757461;
-			PBXWorkspaceStateSaveDate = 341757461;
+			PBXPerProjectTemplateStateSaveDate = 341864874;
+			PBXWorkspaceStateSaveDate = 341864874;
 		};
 		perUserProjectItems = {
-			F19994A0144F70BA00C275B8 = F19994A0144F70BA00C275B8 /* PBXTextBookmark */;
-			F19994A1144F70BA00C275B8 = F19994A1144F70BA00C275B8 /* PBXTextBookmark */;
-			F19994A2144F70BA00C275B8 = F19994A2144F70BA00C275B8 /* PBXTextBookmark */;
-			F19994A3144F70BA00C275B8 = F19994A3144F70BA00C275B8 /* PBXTextBookmark */;
-			F19994A4144F70BA00C275B8 = F19994A4144F70BA00C275B8 /* PBXTextBookmark */;
-			F19994A5144F70BA00C275B8 = F19994A5144F70BA00C275B8 /* PBXTextBookmark */;
+			F1A08CCB1460729900E3F17F /* PBXTextBookmark */ = F1A08CCB1460729900E3F17F /* PBXTextBookmark */;
+			F1A08CCC1460729900E3F17F /* PBXTextBookmark */ = F1A08CCC1460729900E3F17F /* PBXTextBookmark */;
+			F1A08CCD1460729900E3F17F /* PBXTextBookmark */ = F1A08CCD1460729900E3F17F /* PBXTextBookmark */;
+			F1A08CCE1460729900E3F17F /* PBXTextBookmark */ = F1A08CCE1460729900E3F17F /* PBXTextBookmark */;
+			F1E4F8CA145F42B0003231C6 /* PBXTextBookmark */ = F1E4F8CA145F42B0003231C6 /* PBXTextBookmark */;
+			F1E4F8CC145F42B0003231C6 /* PBXTextBookmark */ = F1E4F8CC145F42B0003231C6 /* PBXTextBookmark */;
+			F1E4F8E6145F44F9003231C6 /* PBXTextBookmark */ = F1E4F8E6145F44F9003231C6 /* PBXTextBookmark */;
+			F1E4F8E9145F44F9003231C6 /* PBXTextBookmark */ = F1E4F8E9145F44F9003231C6 /* PBXTextBookmark */;
 		};
 		sourceControlManager = F15A5855142E4B4100560AB9 /* Source Control */;
 		userBuildSettings = {
@@ -82,11 +84,18 @@
 			F15A584F142E4B2300560AB9 /* Compilador */,
 		);
 	};
+	C15F72BD145DCB1200D3A4F7 /* Sintatico.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1163, 651}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 241}";
+		};
+	};
 	C1B85513145E1CF60036CA2E /* TabelasSintatico.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1163, 3835}}";
-			sepNavSelRange = "{293, 0}";
-			sepNavVisRange = "{204, 1587}";
+			sepNavIntBoundsRect = "{{0, 0}, {772, 4264}}";
+			sepNavSelRange = "{379, 0}";
+			sepNavVisRange = "{2373, 1404}";
 		};
 	};
 	F1271F14144A0FAE00C41553 /* Lexico.h */ = {
@@ -98,10 +107,10 @@
 	};
 	F1271F15144A0FAE00C41553 /* Lexico.c */ = {
 		uiCtxt = {
-			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{709, 91}\";\n            s = 0;\n        },\n                {\n            c =             (\n                                {\n                    r = \"{4191, 38}\";\n                    s = 0;\n                },\n                                {\n                    r = \"{4276, 101}\";\n                    s = 0;\n                }\n            );\n            r = \"{3938, 1889}\";\n            s = 0;\n        },\n                {\n            r = \"{5858, 196}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 6056}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {1163, 1885}}";
-			sepNavSelRange = "{1362, 18}";
-			sepNavVisRange = "{0, 1214}";
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{709, 91}\";\n            s = 0;\n        },\n                {\n            r = \"{831, 3068}\";\n            s = 0;\n        },\n                {\n            r = \"{4192, 38}\";\n            s = 0;\n        },\n                {\n            r = \"{4277, 101}\";\n            s = 0;\n        },\n                {\n            r = \"{5859, 196}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 6057}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {1163, 1222}}";
+			sepNavSelRange = "{2448, 0}";
+			sepNavVisRange = "{872, 1576}";
 			sepNavWindowFrame = "{{38, 64}, {1058, 788}}";
 		};
 	};
@@ -153,26 +162,26 @@
 	};
 	F15A5861142E4BBE00560AB9 /* main.c */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {791, 624}}";
-			sepNavSelRange = "{80, 33}";
-			sepNavVisRange = "{0, 769}";
+			sepNavIntBoundsRect = "{{0, 0}, {772, 858}}";
+			sepNavSelRange = "{360, 99}";
+			sepNavVisRange = "{0, 1210}";
 			sepNavWindowFrame = "{{15, 85}, {1058, 788}}";
 		};
 	};
 	F15A58A9142E4F7A00560AB9 /* Token.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1163, 1014}}";
-			sepNavSelRange = "{327, 0}";
-			sepNavVisRange = "{0, 638}";
+			sepNavIntBoundsRect = "{{0, 0}, {772, 663}}";
+			sepNavSelRange = "{367, 0}";
+			sepNavVisRange = "{149, 728}";
 			sepNavWindowFrame = "{{320, 90}, {1058, 788}}";
 		};
 	};
 	F15A58AA142E4F7A00560AB9 /* Token.c */ = {
 		uiCtxt = {
-			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{503, 190}\";\n            s = 0;\n        },\n                {\n            r = \"{1768, 206}\";\n            s = 0;\n        },\n                {\n            r = \"{2041, 1120}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 3318}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {1163, 1326}}";
-			sepNavSelRange = "{1006, 0}";
-			sepNavVisRange = "{412, 1107}";
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{1768, 206}\";\n            s = 0;\n        },\n                {\n            r = \"{2041, 1120}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 3318}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {1163, 1391}}";
+			sepNavSelRange = "{516, 0}";
+			sepNavVisRange = "{80, 936}";
 			sepNavWindowFrame = "{{38, 64}, {1058, 788}}";
 		};
 	};
@@ -194,64 +203,84 @@
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
-	F19994A0144F70BA00C275B8 /* PBXTextBookmark */ = {
+	F1A08CCB1460729900E3F17F /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = F15A5861142E4BBE00560AB9 /* main.c */;
-		name = "main.c: 6";
-		rLen = 33;
-		rLoc = 80;
+		fRef = C1B85513145E1CF60036CA2E /* TabelasSintatico.h */;
+		name = "TabelasSintatico.h: 23";
+		rLen = 0;
+		rLoc = 379;
 		rType = 0;
-		vrLen = 769;
-		vrLoc = 0;
+		vrLen = 1404;
+		vrLoc = 2373;
 	};
-	F19994A1144F70BA00C275B8 /* PBXTextBookmark */ = {
+	F1A08CCC1460729900E3F17F /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = F15A58A9142E4F7A00560AB9 /* Token.h */;
-		name = "Token.h: 9";
+		name = "Token.h: 19";
 		rLen = 0;
-		rLoc = 132;
+		rLoc = 367;
 		rType = 0;
-		vrLen = 586;
+		vrLen = 728;
+		vrLoc = 149;
+	};
+	F1A08CCD1460729900E3F17F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F15A5861142E4BBE00560AB9 /* main.c */;
+		name = "main.c: 56";
+		rLen = 0;
+		rLoc = 1706;
+		rType = 0;
+		vrLen = 1168;
+		vrLoc = 41;
+	};
+	F1A08CCE1460729900E3F17F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F15A5861142E4BBE00560AB9 /* main.c */;
+		name = "main.c: 18";
+		rLen = 99;
+		rLoc = 360;
+		rType = 0;
+		vrLen = 1210;
 		vrLoc = 0;
 	};
-	F19994A2144F70BA00C275B8 /* PBXTextBookmark */ = {
+	F1E4F8CA145F42B0003231C6 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = F15A58AA142E4F7A00560AB9 /* Token.c */;
-		name = "Token.c: 13";
+		fRef = C15F72BD145DCB1200D3A4F7 /* Sintatico.c */;
+		name = "Sintatico.c: 1";
 		rLen = 0;
-		rLoc = 192;
+		rLoc = 0;
 		rType = 0;
-		vrLen = 3182;
-		vrLoc = 134;
+		vrLen = 241;
+		vrLoc = 0;
 	};
-	F19994A3144F70BA00C275B8 /* PBXTextBookmark */ = {
+	F1E4F8CC145F42B0003231C6 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = F1271F14144A0FAE00C41553 /* Lexico.h */;
-		name = "Lexico.h: 14";
+		name = "Lexico.h: 16";
 		rLen = 0;
 		rLoc = 208;
 		rType = 0;
-		vrLen = 268;
+		vrLen = 330;
 		vrLoc = 0;
 	};
-	F19994A4144F70BA00C275B8 /* PBXTextBookmark */ = {
+	F1E4F8E6145F44F9003231C6 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = F1271F15144A0FAE00C41553 /* Lexico.c */;
-		name = "Lexico.c: 27";
+		name = "Lexico.c: 220";
 		rLen = 0;
-		rLoc = 585;
+		rLoc = 5742;
 		rType = 0;
-		vrLen = 4130;
-		vrLoc = 0;
+		vrLen = 1713;
+		vrLoc = 4029;
 	};
-	F19994A5144F70BA00C275B8 /* PBXTextBookmark */ = {
+	F1E4F8E9145F44F9003231C6 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = F1271F15144A0FAE00C41553 /* Lexico.c */;
-		name = "Lexico.c: 221";
+		fRef = F15A58AA142E4F7A00560AB9 /* Token.c */;
+		name = "Token.c: 35";
 		rLen = 0;
-		rLoc = 5828;
+		rLoc = 516;
 		rType = 0;
-		vrLen = 6016;
-		vrLoc = 0;
+		vrLen = 936;
+		vrLoc = 80;
 	};
 }

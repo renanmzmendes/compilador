@@ -152,7 +152,6 @@ void criarTabelaDeEstados(){
 			TabelaLexica[estado][valorASCII] = Terminal_CARACTER_ESPECIAL_1_Digitos ;
 		}		
 	}	
-	
 }
 
 Token *getNextToken(FILE *inputFile){
@@ -222,8 +221,10 @@ Token *getNextToken(FILE *inputFile){
 
 void ImprimirTabelaLexico(){
 	printf("\n\nESTADO   CARACTERE   PROXIMO ESTADO");
-	for (int i=0; i<=7; i++) {
-		for (int j=0; j<=255; j++) {
+    int i;
+	for (i=0; i<=7; i++) {
+        int j;
+		for (j=0; j<=255; j++) {
 			printf("%6d   %5c     : %3d\n",i,j,TabelaLexica[i][j]);
 		}
 		printf("\n\n");

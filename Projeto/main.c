@@ -8,21 +8,16 @@
 #define MAX 30
 #define MAX_SIZE 50
 
-#define TRUE 0
-#define FALSE 1
-
-int main()
-{	
+int main() {	
 	Token *token;
 	token = (Token*) malloc(sizeof(Token));
 
 	FILE *entrada;
     entrada = fopen("./in.txt", "r");
     //verificando se arquivo existe
-    if(entrada==NULL)
-    {
-     printf("arquivo nao encontrado\n\n");
-     return FALSE;
+    if(entrada == NULL) {
+        printf("arquivo nao encontrado\n\n");
+        return -1;
     }
 	
 	InicializaLexico();
@@ -31,38 +26,40 @@ int main()
 	//printf("Linha  Coluna     Token     Tipo\n");
     //Lendo o Arquivo pegando todos os Tokens até terminar o arquivo o ch deve iniciar com NULL
     StackInit(&pilha, MAX_SIZE);
-    int estadoCorrente = PROGRAM_INICIAL;
-
-	do {
-        token = getNextToken(entrada);
+    Estado estadoCorrente = PROGRAM_INICIAL;
+    token = getNextToken(entrada);
+	while (token->tipo != EoF) {
         
-        transicao* trans = 0;
-        chamadaSubmaquina* chamada = 0;
+        transicao trans;
+        chamadaSubmaquina chamada;
         
-        procuraTransicao(estadoCorrente, token, trans);
-        if(trans == 0) {
-            procuraChamadaSubmaquina(estadoCorrente, token, chamada);
+        if(!procuraTransicao(estadoCorrente, token, &trans)) {
             
-            if(chamada == 0) {
-                printf("Erro no reconhecimento de sintaxe, linha %d", token->linha);
-                getchar();
-                exit(-1);
+            if(!procuraChamadaSubmaquina(estadoCorrente, token, &chamada)) {
+                if(estadoFinal(estadoCorrente)) {
+                    estadoCorrente = desempilha();
+                    
+                    semantico_tbd();
+                } else {
+                    printf("Erro no reconhecimento de sintaxe, linha %d", token->linha);
+                    getchar();
+                    exit(-1);
+                }
+            } else {
+                estadoCorrente = chamada.estadoDestino;
+                empilha(chamada.estadoRetorno);
+                                
+                semantico_tbd();
             }
-            
-            while(!aceita(estadoCorrente)) {
-                
-            }
-            
             
         } else {
+            estadoCorrente = trans.estadoDestino;            
+            token = getNextToken(entrada);
             
+            semantico_tbd();
         }
-        
-        free(trans);
-        free(chamada);
-	} while (token->tipo != EoF);
-	
+	}	
 	
     free(token);
-	return TRUE;
+	return 0;
 }

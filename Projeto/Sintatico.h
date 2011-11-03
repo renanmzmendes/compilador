@@ -13,15 +13,16 @@
 #include "Token.h"
 #include "TabelasSintatico.h"
 
-void empilha(int estado, int submaquina);
-void desempilha(); // sempre desempilha um estado e uma submáquina, não?
-
-int submaquinaValida(int estado, tipoToken token);
-int reconhece();
-
 stackT pilha;
 
-void procuraTransicao(int estadoCorrente, Token* token, transicao* trans);
-void procuraChamadaSubmaquina(int estadoCorrente, Token* token, chamadaSubmaquina* chamada);
+void empilha(Estado estadoRetorno);
+int desempilha();
+
+int procuraTransicao(Estado estadoCorrente, Token* token, transicao* trans);
+int procuraChamadaSubmaquina(Estado estadoCorrente, Token* token, chamadaSubmaquina* chamada);
+
+int estadoFinal(Estado estado);
+
+void semantico_tbd();
 
 #endif
