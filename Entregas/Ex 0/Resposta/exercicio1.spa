@@ -1,0 +1,8 @@
+[Version] 2
+S;0;a;2;nop;nop;nop
+S;2;eps;0;3;nop;nop
+S;3;b;4;nop;nop;nop
+S;4;eps;1;nop;nop;nop
+S;0;eps;5;nop;nop;nop
+S;5;eps;1;nop;nop;nop
+S;1;eps;pop;fin;nop;nop
