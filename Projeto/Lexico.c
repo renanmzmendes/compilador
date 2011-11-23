@@ -66,7 +66,8 @@ void criarTabelaDeEstados(){
 		}
 		else if (valorASCII== '+' || valorASCII== '-' || valorASCII== '*' || valorASCII== '/' || 
 				 valorASCII== '%' || valorASCII== '(' || valorASCII== ')' || valorASCII== '&' ||
-				 valorASCII== '|' || valorASCII== '[' || valorASCII== ']' ){
+				 valorASCII== '|' || valorASCII== '[' || valorASCII== ']' || valorASCII== '@' ||
+				 valorASCII== '$' ){
 			TabelaLexica[estado][valorASCII] = Terminal_CARACTER_ESPECIAL;
 		}
 		else if (valorASCII== '\377'){
