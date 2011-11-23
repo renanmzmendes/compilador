@@ -62,10 +62,11 @@ int estadoFinal(Estado estado) {
        || estado == DECL_FUNCAO_7_AC
        || estado == DECL_OU_COMANDO_2_AC
        || estado == DECL_PARAMS_2_AC
-       || estado == DECL_SIMP_VAR_2_AC
+       || estado == DECL_VAR_SIMP_OU_HOM_2_AC
+       || estado == DECL_VAR_HET_4_AC
        || estado == EXPR_1_AC
        || estado == FATOR_COND_2_AC
-       || estado == FATOR_1_AC
+       || estado == FATOR_2_AC
        || estado == ID_1_AC
        || estado == LISTA_EXPR_1_AC
        || estado == LISTA_MEM_1_AC
@@ -75,6 +76,10 @@ int estadoFinal(Estado estado) {
        || estado == PROGRAM_6_AC
        || estado == REST_CHAMADA_FUNCAO_3_AC
        || estado == REST_COMANDO_ATR_2_AC
+       || estado == REST_COMANDO_ATR_ARRAY_5_AC
+       || estado == REST_COMANDO_ATR_STRUCT_4_AC
+       || estado == REST_DECL_VAR_SIMP_1_AC
+       || estado == REST_DECL_VAR_HOM_4_AC
        || estado == TERMO_COND_1_AC
        || estado == TERMO_1_AC
        || estado == TIPO_1_AC) {
