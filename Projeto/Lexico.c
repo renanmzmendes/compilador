@@ -32,7 +32,7 @@ static int TabelaLexica[NumEstados][256];
 #include "Lexico.h"
 
 void InicializaLexico(){
-	linha = 0;
+	linha = 1;
 	coluna = 0;
 	criarTabela_De_Caracteres_Especiais();
 	criarTabelaDeEstados();
