@@ -1,12 +1,13 @@
+int function()
+	a = 1 / (1 + 2)
+	return a
+end
+
 struct s
 	int a
 	float b
 end
 
-int function()
-	a = 1 / (1 + 2)
-	return a
-end
 
 main()
 	while(i > 10)
@@ -18,6 +19,11 @@ main()
 		if(1 > 3)
 			if(s > 2)
 			 output 1, 2, 4
+		elsif(s > 1)
+			bla = 123
+			b = 10
+		else
+			o()
 		end
 		
 		function2()
