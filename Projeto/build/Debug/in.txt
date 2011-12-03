@@ -15,9 +15,6 @@ struct Test
 	
 end
 
-sdasdsdsda
-
-
 main()
 	while(i > 10)
 		a = b / c
@@ -26,7 +23,6 @@ main()
 			if(s > 2)
 			 output 1, 2, 4
 		end
-		
 		function2()
 	end
 end

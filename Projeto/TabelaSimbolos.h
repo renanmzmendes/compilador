@@ -8,25 +8,32 @@
  */
 
 #define MAX_ESCOPOS 50
+#define MAX_SIMBOLOS 50
 
 typedef enum {INT, CHAR, FLOAT, BOOLEAN} Tipo;
 
-typedef struct {
-	Tipo t;
-	char* nome;
-	char* label;
-}  TabelaSimbolos;
-
+//global
 typedef struct  {
 	char* label;
 	int valor;
 } TabelaConstantes;
 
+
 typedef struct {
-	TabelaSimbolos ts;
-	struct Escopo* escopos[MAX_ESCOPOS];
+	Tipo tipo;
+	char* nome;
+	char* label;
+}  Simbolo;
+
+//Escopo com no máximo MAX_SIMBOLOS
+typedef struct {
+	Simbolo s[MAX_SIMBOLOS];
+	struct Escopo* anterior;
+	struct Escopo* internos[MAX_ESCOPOS];
+	int numSimbolos;
+	int numInternos;
 } Escopo;
 
-void adicionarSimbolo(Tipo t, char* nome, char* label, Escopo* escopo);
-int existeSimbolo(char* nome, Escopo* escopo);
-
+void initEscopo(Escopo* e);
+void adicionarSimbolo(Tipo t, char* nome, char* label, Escopo* e);
+int existeSimbolo(char* nome, Escopo* e);

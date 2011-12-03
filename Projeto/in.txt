@@ -2,13 +2,10 @@ int function()
 	a = 1 / (1 + 2)
 	return a
 end
-
 struct s
 	int a
 	float b
 end
-
-
 main()
 	while(i > 10)
 		a = b / (1 + 2)
