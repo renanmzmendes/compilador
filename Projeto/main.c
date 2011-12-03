@@ -11,9 +11,10 @@
 int main() {	
 	Token *token;
 	token = (Token*) malloc(sizeof(Token));
-
+    
+    
 	FILE *entrada;
-    entrada = fopen("./in.txt", "r");
+    entrada = fopen("/Users/renanmzmendes/compilador/Projeto/in.txt", "r");
     //verificando se arquivo existe
     if(entrada == NULL) {
         printf("arquivo nao encontrado\n\n");
@@ -33,9 +34,13 @@ int main() {
         transicao trans;
         chamadaSubmaquina chamada;
         
+        // Procura transição
         if(!procuraTransicao(estadoCorrente, token, &trans)) {
             
+            // Se não encontrar transição procura chamada de submáquina
             if(!procuraChamadaSubmaquina(estadoCorrente, token, &chamada)) {
+                // Caso não encontra chamada de submáquina, verifica se é estado final,
+                // se for aceita, senão dá erro
                 if(estadoFinal(estadoCorrente)) {
                     estadoCorrente = desempilha();
                     
@@ -45,14 +50,14 @@ int main() {
                     getchar();
                     exit(-1);
                 }
-            } else {
+            } else { // Se acha chamada de submáquina
                 estadoCorrente = chamada.estadoDestino;
                 empilha(chamada.estadoRetorno);
                                 
                 semantico_tbd();
             }
             
-        } else {
+        } else { // Se encontrar transição
             estadoCorrente = trans.estadoDestino;            
             token = getNextToken(entrada);
             

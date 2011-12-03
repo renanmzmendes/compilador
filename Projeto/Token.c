@@ -33,7 +33,8 @@ const char* Tabela_Palavras_Reservadas[] = {
     "return",
     "input",
     "output",
-    "main"
+    "main",
+    "struct"
 };
 
 //cria o tal do token

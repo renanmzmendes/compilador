@@ -66,6 +66,7 @@ int estadoFinal(Estado estado) {
        || estado == DECL_VAR_HET_4_AC
        || estado == EXPR_1_AC
        || estado == FATOR_COND_2_AC
+       || estado == FATOR_1_AC
        || estado == FATOR_2_AC
        || estado == ID_1_AC
        || estado == LISTA_EXPR_1_AC
@@ -74,6 +75,9 @@ int estadoFinal(Estado estado) {
        || estado == NUM_1_AC
        || estado == PARAM_1_AC
        || estado == PROGRAM_6_AC
+       || estado == REST_ACESSO_STRUCT_2_AC
+       || estado == REST_ACESSO_STRUCT_3_AC
+       || estado == REST_ACESSO_VETOR_3_AC
        || estado == REST_CHAMADA_FUNCAO_3_AC
        || estado == REST_COMANDO_ATR_2_AC
        || estado == REST_COMANDO_ATR_ARRAY_5_AC

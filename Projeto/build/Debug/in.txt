@@ -8,6 +8,15 @@ int function2()
 	return d+c
 end
 
+struct Test
+	float f
+	int a
+	char b
+	
+end
+
+sdasdsdsda
+
 
 main()
 	while(i > 10)
