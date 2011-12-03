@@ -17,14 +17,18 @@ void initEscopo(Escopo* e){
 }
 
 
+void insereEscopoInterno(Escopo* e, Escopo* interno){
+	numInternos++;
+	e.internos[e->numInternos] = interno;
+}
+
+
 void adicionarSimbolo(Tipo t, char* nome, char* label, Escopo* e){
-	e->numSimbolos++;
-	
+	e->numSimbolos++;	
 	e->s[e->numSimbolos].tipo = t;
 	strcpy(e->s[e->numSimbolos].nome, nome);
 	strcpy(e->s[e->numSimbolos].label,label);
 }
-
 
 
 int existeSimbolo(char* nome, Escopo* e){

@@ -1,0 +1,5 @@
+/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/TabelaSimbolos.c: In function 'insereEscopoInterno':
+/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/TabelaSimbolos.c:21: error: 'numInternos' undeclared (first use in this function)
+/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/TabelaSimbolos.c:21: error: (Each undeclared identifier is reported only once
+/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/TabelaSimbolos.c:21: error: for each function it appears in.)
+/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/TabelaSimbolos.c:22: error: request for member 'internos' in something not a structure or union

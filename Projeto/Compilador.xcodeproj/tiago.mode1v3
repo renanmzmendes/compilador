@@ -197,48 +197,7 @@
 	<key>Notifications</key>
 	<array/>
 	<key>OpenEditors</key>
-	<array>
-		<dict>
-			<key>Content</key>
-			<dict>
-				<key>PBXProjectModuleGUID</key>
-				<string>F1501A54148AC50C00700D6B</string>
-				<key>PBXProjectModuleLabel</key>
-				<string>Token.h</string>
-				<key>PBXSplitModuleInNavigatorKey</key>
-				<dict>
-					<key>Split0</key>
-					<dict>
-						<key>PBXProjectModuleGUID</key>
-						<string>F1501A55148AC50C00700D6B</string>
-						<key>PBXProjectModuleLabel</key>
-						<string>Token.h</string>
-						<key>_historyCapacity</key>
-						<integer>0</integer>
-						<key>bookmark</key>
-						<string>F1501AA5148ACF9A00700D6B</string>
-						<key>history</key>
-						<array>
-							<string>F1501A11148ABC9E00700D6B</string>
-						</array>
-					</dict>
-					<key>SplitCount</key>
-					<string>1</string>
-				</dict>
-				<key>StatusBarVisibility</key>
-				<true/>
-			</dict>
-			<key>Geometry</key>
-			<dict>
-				<key>Frame</key>
-				<string>{{0, 20}, {1058, 691}}</string>
-				<key>PBXModuleWindowStatusBarHidden2</key>
-				<false/>
-				<key>RubberWindowFrame</key>
-				<string>320 146 1058 732 0 0 1440 878 </string>
-			</dict>
-		</dict>
-	</array>
+	<array/>
 	<key>PerspectiveWidths</key>
 	<array>
 		<integer>-1</integer>
@@ -369,7 +328,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>F1501AA4148ACF9A00700D6B</string>
+										<string>F1501AAA148AD1BE00700D6B</string>
 										<key>history</key>
 										<array>
 											<string>F1CD282E147D5F650072F6EE</string>
@@ -384,8 +343,8 @@
 											<string>F1501A9F148ACF9A00700D6B</string>
 											<string>F1501AA0148ACF9A00700D6B</string>
 											<string>F1501AA1148ACF9A00700D6B</string>
-											<string>F1501AA2148ACF9A00700D6B</string>
-											<string>F1501AA3148ACF9A00700D6B</string>
+											<string>F1501AA8148AD1BE00700D6B</string>
+											<string>F1501AA9148AD1BE00700D6B</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -584,12 +543,12 @@
 	<key>WindowOrderList</key>
 	<array>
 		<string>F1501AA6148ACF9A00700D6B</string>
+		<string>F1501A54148AC50C00700D6B</string>
 		<string>F1501A58148AC50C00700D6B</string>
 		<string>F1501A59148AC50C00700D6B</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>F15A5875142E4E3A00560AB9</string>
-		<string>F1501A54148AC50C00700D6B</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/tiago/Documents/USP/comp COOP/Modulo 5/Compiladores/Compilador/Projeto/Compilador.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -974,7 +933,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>
