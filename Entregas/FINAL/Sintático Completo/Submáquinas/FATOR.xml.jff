@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--Created with JFLAP 6.4.--><structure>
+	<type>fa</type>
+	<automaton>
+		<!--The list of states.-->
+		<state id="0" name="q0">
+			<x>56.0</x>
+			<y>148.0</y>
+			<initial/>
+		</state>
+		<state id="1" name="q1">
+			<x>159.0</x>
+			<y>226.0</y>
+		</state>
+		<state id="2" name="q2">
+			<x>541.0</x>
+			<y>150.0</y>
+			<final/>
+		</state>
+		<state id="3" name="q3">
+			<x>218.0</x>
+			<y>102.0</y>
+		</state>
+		<state id="4" name="q4">
+			<x>142.0</x>
+			<y>53.0</y>
+		</state>
+		<state id="5" name="q5">
+			<x>264.0</x>
+			<y>258.0</y>
+		</state>
+		<state id="6" name="q6">
+			<x>320.0</x>
+			<y>-34.0</y>
+		</state>
+		<state id="7" name="q7">
+			<x>377.0</x>
+			<y>262.0</y>
+		</state>
+		<state id="8" name="q8">
+			<x>491.0</x>
+			<y>217.0</y>
+		</state>
+		<state id="9" name="q9">
+			<x>300.0</x>
+			<y>20.0</y>
+		</state>
+		<state id="10" name="q10">
+			<x>371.0</x>
+			<y>103.0</y>
+		</state>
+		<!--The list of transitions.-->
+		<transition>
+			<from>10</from>
+			<to>2</to>
+			<read>ID</read>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>4</to>
+			<read>"("</read>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>5</to>
+			<read>ID</read>
+		</transition>
+		<transition>
+			<from>6</from>
+			<to>2</to>
+			<read>")"</read>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>1</to>
+			<read>"@"</read>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>2</to>
+			<read>NUM</read>
+		</transition>
+		<transition>
+			<from>8</from>
+			<to>2</to>
+			<read>"]"</read>
+		</transition>
+		<transition>
+			<from>3</from>
+			<to>9</to>
+			<read>ID</read>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>2</to>
+			<read>ID</read>
+		</transition>
+		<transition>
+			<from>9</from>
+			<to>10</to>
+			<read>"."</read>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>3</to>
+			<read>"$"</read>
+		</transition>
+		<transition>
+			<from>7</from>
+			<to>8</to>
+			<read>NUM_INT</read>
+		</transition>
+		<transition>
+			<from>5</from>
+			<to>7</to>
+			<read>"["</read>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>6</to>
+			<read>EXPR</read>
+		</transition>
+	</automaton>
+</structure>

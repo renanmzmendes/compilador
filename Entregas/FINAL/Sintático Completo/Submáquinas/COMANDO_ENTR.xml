@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<structure>
+  <type>fa</type>
+  <state name="q0" id="0">
+    <initial/>
+  </state>
+  <state name="q1" id="1">
+  </state>
+  <state name="q2" id="2">
+    <final/>
+  </state>
+  <transition>
+    <from>0</from>
+    <to>1</to>
+    <read>&quot;input&quot;</read>
+  </transition>
+  <transition>
+    <from>1</from>
+    <to>2</to>
+    <read>LISTA_MEM</read>
+  </transition>
+</structure>

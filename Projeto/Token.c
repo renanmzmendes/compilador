@@ -16,6 +16,7 @@
 #define TRUE 1
 #define FALSE 0
 
+
 //sem indices, só as palavras
 const char* Tabela_Palavras_Reservadas[] = {
 	"if",
@@ -36,6 +37,7 @@ const char* Tabela_Palavras_Reservadas[] = {
     "main",
     "struct"
 };
+
 
 //cria o tal do token
 Token *criarToken(char *Lexema, int terminal, int linha, int coluna){
@@ -100,19 +102,3 @@ int ehPalavraReservada(char *Lexema){
 	}
 	return FALSE;	
 }
-
-// imprime
-/*void imprimirToken(Token *aux){
-	if (aux->tipo == PONTUACAO)
-		printf("%5d %5d            \\n : ", aux->linha, aux->coluna);
-	else 
-		printf("%5d %5d  %12s : ", aux->linha, aux->coluna, aux->valor);
-	ImprimeTipo(aux->tipo);
-	printf("\n");
-}*/
-
-
-//essa tabela serveria para o caso de ter que diferenciar os caracteres especiais.
-// NÀO ESTA IMPLEMENTADA
-void criarTabela_De_Caracteres_Especiais(){}
-

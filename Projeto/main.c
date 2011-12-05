@@ -4,6 +4,7 @@
 #include "Sintatico.h"
 #include "ConstantesSintatico.h"
 #include "TabelasSintatico.h"
+#include "TabelaSimbolos.h"
 
 #define MAX 30
 #define MAX_SIZE 50
@@ -24,11 +25,28 @@ int main() {
 	InicializaLexico();
 	//ImprimirTabelaLexico(); //se quiser ver a tabela de estados
 	
+	char* nomeVariavel = "variavelDeTeste";
+	char* label = "fatorial_a";
+	
+	Escopo teste;
+	initEscopo(&teste);
+	adicionarSimbolo(INT, nomeVariavel, label, &teste);
+	
+	Escopo casa;
+	insereEscopoInterno(&teste, &casa);
+	
+	
 	//printf("Linha  Coluna     Token     Tipo\n");
     //Lendo o Arquivo pegando todos os Tokens até terminar o arquivo o ch deve iniciar com NULL
     StackInit(&pilha, MAX_SIZE);
     Estado estadoCorrente = PROGRAM_INICIAL;
-    token = getNextToken(entrada);
+    
+	token = getNextToken(entrada);
+	token = getNextToken(entrada);
+	
+
+	
+	
 	while (token->tipo != EoF) {
         
         transicao trans;

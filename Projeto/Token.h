@@ -40,11 +40,5 @@ Token *criarToken(char *Lexema, int terminal, int linha, int coluna);
 tipoToken definirTipo(char *Lexema,int terminal);
 int ehPalavraReservada(char *Lexema);
 
-//pra visualizar 
-//void imprimirToken(Token *aux);
-//void ImprimeTipo(tipoToken Tipo);
-
-//nem ta usando ainda
-void criarTabela_De_Caracteres_Especiais();
 
 #endif

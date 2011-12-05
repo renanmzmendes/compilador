@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<structure>
+  <type>fa</type>
+  <state name="q0" id="0">
+    <initial/>
+  </state>
+  <state name="q1" id="1">
+    <final/>
+  </state>
+  <transition>
+    <from>0</from>
+    <to>1</to>
+    <read>ATR_OU_CHAMADA</read>
+  </transition>
+  <transition>
+    <from>0</from>
+    <to>1</to>
+    <read>COMANDO_COND</read>
+  </transition>
+  <transition>
+    <from>0</from>
+    <to>1</to>
+    <read>COMANDO_ITER</read>
+  </transition>
+  <transition>
+    <from>0</from>
+    <to>1</to>
+    <read>COMANDO_RETORNO</read>
+  </transition>
+  <transition>
+    <from>0</from>
+    <to>1</to>
+    <read>COMANDO_SAIDA</read>
+  </transition>
+  <transition>
+    <from>0</from>
+    <to>1</to>
+    <read>COMANDO_ENTR</read>
+  </transition>
+</structure>

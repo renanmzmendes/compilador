@@ -34,7 +34,6 @@ static int TabelaLexica[NumEstados][256];
 void InicializaLexico(){
 	linha = 1;
 	coluna = 0;
-	criarTabela_De_Caracteres_Especiais();
 	criarTabelaDeEstados();
 }
 
@@ -86,7 +85,7 @@ void criarTabelaDeEstados(){
 			valorASCII >= '0' && valorASCII <= '9'){
 			TabelaLexica[estado][valorASCII] = 1;
 		}
-		else {
+		else{
 			TabelaLexica[estado][valorASCII] = Terminal_IDENT ;
 		}		
 	}
@@ -163,6 +162,7 @@ Token *getNextToken(FILE *inputFile){
 	int estado_Atual = 0;
 	char BufferLexema[256] = {};
 	
+	
 	// descartando os espaços e tabs
 	while (ch == ' ' || ch == '\t') {
 		ch = getc(inputFile);
@@ -183,15 +183,21 @@ Token *getNextToken(FILE *inputFile){
 	// apontando para o primeiro caractere do próximo token
 	// Percorre os estados até encontrar estado Terminal
 	BufferLexema[strlen(BufferLexema)] = ch;
-	estado_Atual = TabelaLexica[estado_Atual][ch];
+	if (ch == '\377') {
+		estado_Atual = Fim_de_Arquivo;
+	}
+	else {
+		estado_Atual = TabelaLexica[estado_Atual][ch];
+	}
 	while (estado_Atual >= 0) {
 		ch = getc(inputFile);
 		coluna++;
+		BufferLexema[strlen(BufferLexema)] = ch;
 		if (ch == '\377') {
-			estado_Atual = Fim_de_Arquivo;
+			estado_Atual = Terminal_IDENT;
 		}
-		else {
-			BufferLexema[strlen(BufferLexema)] = ch;
+		else
+		{
 			estado_Atual = TabelaLexica[estado_Atual][ch];
 		}
 	} 

@@ -18,22 +18,34 @@ void initEscopo(Escopo* e){
 
 
 void insereEscopoInterno(Escopo* e, Escopo* interno){
-	numInternos++;
-	e.internos[e->numInternos] = interno;
+	e->numInternos++;
+	e->internos[e->numInternos] = interno;
 }
+
+//
+//
+///Escopo com no máximo MAX_SIMBOLOS
+//typedef struct {
+//	Simbolo s[MAX_SIMBOLOS];
+//	struct Escopo* anterior;
+//	struct Escopo* internos[MAX_ESCOPOS];
+//	int numSimbolos;
+//	int numInternos
+//
+
 
 
 void adicionarSimbolo(Tipo t, char* nome, char* label, Escopo* e){
 	e->numSimbolos++;	
-	e->s[e->numSimbolos].tipo = t;
-	strcpy(e->s[e->numSimbolos].nome, nome);
-	strcpy(e->s[e->numSimbolos].label,label);
+	e->simbolos[e->numSimbolos].tipo = t;
+	e->simbolos[e->numSimbolos].nome = nome;
+	e->simbolos[e->numSimbolos].label = label;
 }
 
 
 int existeSimbolo(char* nome, Escopo* e){
 	for (int i=0; i <= e->numSimbolos; i++) {
-		if (!strcmp(e->s[i].nome, nome)) {
+		if (!strcmp(e->simbolos[i].nome, nome)) {
 			return 1;
 		}
 	}

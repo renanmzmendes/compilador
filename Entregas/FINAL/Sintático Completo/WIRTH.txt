@@ -1,0 +1,52 @@
+LETRA = "A"|"B"|"C"|"D"|"E"|"F"|"G"|"H"|"I"|"J"|"K"|"L"|"M"|"N"|"O"|"P"|"Q"|"R"|"S"|"T"|"U"|"V"|"W"|"X"|"Y"|"Z"|"a"|"b"|"c"|"d"|"e"|"f"|"g"|"h"|"i"|"j"|"k"|"l"|"m"|"n"|"o"|"p"|"q"|"r"|"s"|"t"|"u"|"v"|"w"|"x"|"y"|"z".
+DIGITO = "0"|"1"|"2"|"3"|"4"|"5"|"6"|"7"|"8"|"9".
+NUM = NUM_INT | NUM_REAL.
+NUM_INT = DIGITO{DIGITO}.
+NUM_REAL = NUM_INT "." NUM_INT.
+BOOLEAN =	"true"| "false".
+EXPR =	TERMO {"+" TERMO | "-" TERMO}.
+TERMO =	FATOR {"*" FATOR | "/" FATOR | "%" FATOR}.
+
+FATOR = ID [(REST_ACESSO_VETOR | REST_ACESSO_STRUCT | REST_CHAMADA_FUNCAO)] | NUM | "(" EXPR ")".
+REST_ACESSO_VETOR = "[" NUM_INT "]".
+REST_ACESSO_STRUCT = "." ID [REST_ACESSO_VETOR].
+
+ID = LETRA{LETRA|DIGITO}.
+TIPO =	"int"|"float"|"char"|"boolean"|"void".
+
+DECL_PARAMS = [TIPO ID {"," TIPO ID}].
+COMANDO = ATR_OU_CHAMADA | COMANDO_COND | COMANDO_ITER | COMANDO_RETORNO | COMANDO_SAIDA | COMANDO_ENTR.
+
+ATR_OU_CHAMADA = ID (REST_COMANDO_ATR_STRUCT | REST_COMANDO_ATR_ARRAY | REST_COMANDO_ATR | REST_CHAMADA_FUNCAO).
+
+CHAMADA_FUNCAO = ID REST_CHAMADA_FUNCAO.
+
+REST_COMANDO_ATR_ARRAY = "[" NUM_INT "]" "=" EXPR.
+REST_COMANDO_ATR_STRUCT = "." ID "=" EXPR.
+
+REST_COMANDO_ATR = "=" EXPR.
+REST_CHAMADA_FUNCAO = "("PARAM {"," PARAM}")".
+CONDICAO = TERMO_COND {"|" TERM_COND}.
+TERMO_COND = FATOR_COND {"&" FATOR_COND}.
+FATOR_COND = "!" "("CONDICAO")" | ID | BOOLEAN | COMPARACAO.
+COMPARACAO = EXPR (">" | ">=" | "<" | "<=" | "==" | "!=") EXPR.
+COMANDO_COND = "if" "(" CONDICAO ")" "\n" {DECL_OU_COMANDO} {"elsif" "(" CONDICAO ")" "\n" {DECL_OU_COMANDO}} ["else" "\n" {DECL_OU_COMANDO}] "end".
+COMANDO_ITER = "while" "(" CONDICAO ")" "\n" {DECL_OU_COMANDO} "end".
+PARAM = EXPR | CONDICAO.
+COMANDO_ENTR = "input" LISTA_MEM.
+LISTA_MEM =	ID {"," ID}.
+COMANDO_SAIDA =	"output" LISTA_EXPR.
+LISTA_EXPR = EXPR {"," EXPR}.
+COMANDO_RETORNO = "return" EXPR.
+
+DECL_OU_COMANDO = [DECL_VAR_SIMP_OU_HOM | DECL_VAR_HET | COMANDO] "\n".
+
+DECL_FUNCAO = TIPO ID"("[DECL_PARAMS]")" "\n" {DECL_OU_COMANDO} "end".	
+PROGRAM = {[(DECL_FUNCAO | DECL_VAR_HET)] "\n"} "main" "(" ")" "\n" {DECL_OU_COMANDO}  "end".
+
+DECL_VAR_SIMP_OU_HOM = TIPO (REST_DECL_VAR_SIMP | REST_DECL_VAR_HOM).
+
+REST_DECL_VAR_SIMP = ID.
+REST_DECL_VAR_HOM = "[" NUM_INT "]" ID.
+
+DECL_VAR_HET = "struct" ID "\n" {DECL_VAR_SIMP_OU_HOM "\n"} "end".

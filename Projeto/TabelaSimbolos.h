@@ -26,14 +26,16 @@ typedef struct {
 }  Simbolo;
 
 //Escopo com no máximo MAX_SIMBOLOS
-typedef struct {
-	Simbolo s[MAX_SIMBOLOS];
-	struct Escopo* anterior;
-	struct Escopo* internos[MAX_ESCOPOS];
+typedef struct _Escopo{
+	Simbolo simbolos[MAX_SIMBOLOS];
+	struct _Escopo* anterior;
+	struct _Escopo* internos[MAX_ESCOPOS];
 	int numSimbolos;
 	int numInternos;
 } Escopo;
 
 void initEscopo(Escopo* e);
+void insereEscopoInterno(Escopo* e, Escopo* interno);
+
 void adicionarSimbolo(Tipo t, char* nome, char* label, Escopo* e);
 int existeSimbolo(char* nome, Escopo* e);
